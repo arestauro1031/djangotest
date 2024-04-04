@@ -22,3 +22,4 @@ https://www.youtube.com/watch?v=gSYLNsbRSUs  link for paymongo
 https://developers.paymongo.com/docs/account-activation  paymongo document reference for account activation
 https://www.youtube.com/watch?v=xCsBkYSwZJ8  paymongo sample
 https://developers.paymongo.com/docs/getting-started paymongo API test transaction
+https://www.youtube.com/watch?v=trU8iWBm0ec&list=PLj21bMRzCMPjzA9RpboLQF3TsV4vFeen6 paymongo introduction
