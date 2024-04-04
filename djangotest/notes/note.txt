@@ -19,3 +19,5 @@ comment in html: CTRL + K + C
 
 https://www.youtube.com/watch?v=Dbn4scR_25A link for payment gateways
 https://www.youtube.com/watch?v=gSYLNsbRSUs  link for paymongo
+
+https://www.youtube.com/watch?v=tRZGeaHPoaw git tutorial

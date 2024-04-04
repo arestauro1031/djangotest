@@ -98,12 +98,13 @@ def userProfile(request, pk):
     rooms = user.room_set.all()
     room_message = user.message_set.all()
     topics= Topic.objects.all()
-    context={'user':user, 'rooms':rooms, 'room_messae':room_message, 'topics':topics}
+    context={'user':user, 'rooms':rooms, 'room_messagesd':room_message, 'topics':topics}
     return render(request, 'base/profile.html', context)
 
 @login_required(login_url='login')
 def createRoom(request):
     form = RoomForm()
+    topics = Topic.objects.all()
     if request.method == 'POST':            #  POST means the user has submitted the form
         #print(request.POST)
         #request.POST.get('name')
@@ -112,14 +113,14 @@ def createRoom(request):
             form.save()         #   create the object
             return redirect('home')
         
-    context= {'form': form}
+    context= {'form': form, 'topics':topics}
     return render(request, 'base/room_form.html', context)
 
 @login_required(login_url='login')
 def updateRoom(request, pk):
     room = Room.objects.get(id=pk) # get the object
     form = RoomForm(instance=room) # create a form with the object
-    
+    topics = Topic.objects.all()
     if request.user != room.host:
         return HttpResponse('You are not authorized to edit this room')
     
@@ -129,7 +130,7 @@ def updateRoom(request, pk):
             form.save()     #   save/update the object
             return redirect('home')
         
-    context = {'form':form}
+    context = {'form':form, 'topics':topics}
     return render(request, 'base/room_form.html', context)
 
 @login_required(login_url='login')

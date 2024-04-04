@@ -94,6 +94,7 @@
                                     </a>
                                     <span class="thread__date">{{message.created|timesince}} ago</span>
                                 </div>
+
                                 {% if request.user == message.user %}
                                 <a href="{% url 'delete-message' message.id %}">
                                     <div class="thread__delete">
@@ -129,7 +130,7 @@
             <div class="participants__list scroll">
 
                 {% for user in participants %}
-                <a href="{% url 'user-profile' user.id %}.html" class="participant">
+                <a href="{% url 'user-profile' room.host.id %}" class="participant">
                     <div class="avatar avatar--medium">
                         <img src="https://randomuser.me/api/portraits/men/37.jpg" />
                     </div>
