@@ -106,12 +106,18 @@ def createRoom(request):
     form = RoomForm()
     topics = Topic.objects.all()
     if request.method == 'POST':            #  POST means the user has submitted the form
+        topic_name = request.POST.get('topic')  
+        topic, created = Topic.objects.get_or_create(name=topic_name)
         #print(request.POST)
         #request.POST.get('name')
-        form = RoomForm(request.POST)
-        if form.is_valid():
-            form.save()         #   create the object
-            return redirect('home')
+        # form = RoomForm(request.POST)
+        Room.objects.create(
+            host = request.user,
+            topic = topic,
+            name = request.POST.get('name'),
+            description = request.POST.get('description')
+        )
+        return redirect('home')
         
     context= {'form': form, 'topics':topics}
     return render(request, 'base/room_form.html', context)
@@ -125,12 +131,15 @@ def updateRoom(request, pk):
         return HttpResponse('You are not authorized to edit this room')
     
     if request.method == 'POST':
-        form = RoomForm(request.POST, instance=room)
-        if form.is_valid():
-            form.save()     #   save/update the object
-            return redirect('home')
+        topic_name = request.POST.get('topic')  
+        topic, created = Topic.objects.get_or_create(name=topic_name)
+        room.name = request.POST.get('name')
+        room.topic = topic
+        room.description = request.POST.get('description')
+        room.save()
+        return redirect('home')
         
-    context = {'form':form, 'topics':topics}
+    context = {'form':form, 'topics':topics, 'room':room}
     return render(request, 'base/room_form.html', context)
 
 @login_required(login_url='login')
