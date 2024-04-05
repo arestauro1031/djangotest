@@ -1,0 +1,23 @@
+.env\scripts\activate                   ##activate virtual environment
+.env\scripts\deactivate                 ##deactivate virtual environment
+cd ../                                  ##go to project folder
+http://127.0.0.1:8000/                  ##server url
+python manage.py runserver              ##run server
+python manage.py migrate                ##add to database after execution
+python manage.py makemigrations         ##create migrations
+admin pass
+qltyayan
+yayan123456
+other user
+tame
+tame123456
+elric
+elric123456
+
+comment in html: CTRL + K + C
+
+
+https://www.youtube.com/watch?v=Dbn4scR_25A link for payment gateways
+https://www.youtube.com/watch?v=gSYLNsbRSUs  link for paymongo
+
+https://www.youtube.com/watch?v=tRZGeaHPoaw git tutorial
