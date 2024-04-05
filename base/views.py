@@ -177,3 +177,7 @@ def updateUser(request):
         
     
     return render(request, 'base/update-user.html', {'form': form})
+
+def topicsPage(request):
+    topics = Topic.objects.all()
+    return render(request, 'base/topics.html', {})
