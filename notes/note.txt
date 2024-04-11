@@ -32,3 +32,19 @@ https://www.geeksforgeeks.org/how-to-integrate-mysql-database-with-django/
 https://www.youtube.com/watch?v=tRZGeaHPoaw git tutorial
 
 https://forums.mydigitallife.net/threads/bios-recovery-acer-aspire-5-a515-51g.79447/ bios recovery
+
+Apr 20, 2020
+tqhoang said: ↑
+Unfortunately, it looks like you will have to buy a CH341A BIOS programmer and SOIC8 test clip. Then you'll have to find your BIOS chip on the motherboard and reflash it.
+
+You should be able to use the BIOS.FD that I posted above to use with the programmer software.
+Thanks mate it helped and worked for me after a bad bios flash. I used the programmer as crisis mode did nothing.
+
+
+
+Please I have an ACER A515-51g-58VH, with BIOS insideh20. I ended up deleting the BIOS and it does not start. I read some methods on the Internet (press FN + ESC and turn on the device or key Windows + B), the program crisis recovery and a pen drive with the BIOS files. The program prompts you to rename the BIOS file to FD format. I downloaded one on the ACER site that comes in the EXE format. Uncompressed but has the following files: Biosimageproc. dll, Flshook. exe, FWUPDLCL. exe, H2OFFT. exe, Iscflash. SYS, iscflashx64. SYS, mfc90u. dll, Microsoft. VC90. CRT. manifest, Microsoft. VC90. MFC. manifest, Msvcp90. dll, msvcr90. dll, platform. Ini. which/what do I use and renew? Thank you very much
+Answers
+JackE
+JackE ACE Posts: 44,369 Trailblazer
+February 2019
+You're looking for an approximately 9MB file probably with a .bin, .rom, .fd or .wph extension. The file must be renamed C5V01x64.fd. It must be the only file in the root directory of the FAT32 formatted USB pendrive. The FN+ESC recovery method is not usually reliable for a failed BIOS firmware update if its boot block has been damaged. You'll probably need to send the machine in to ACER repair service to recover the BIOS. Jack E/NJ
