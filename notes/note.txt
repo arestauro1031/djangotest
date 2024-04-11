@@ -1,6 +1,7 @@
 .env\scripts\activate                   ##activate virtual environment
 .env\scripts\deactivate                 ##deactivate virtual environment
 cd ../                                  ##go to project folder
+CTRL + C                                ## cancel running server in terminal
 http://127.0.0.1:8000/                  ##server url
 python manage.py runserver              ##run server
 python manage.py migrate                ##add to database after execution
@@ -9,6 +10,7 @@ python manage.py startapp base          ##create an app named base
 django-admin startproject MyDB          ##initialize db project
 cd MyDB                                  ##go to project folder
 CREATE DATABASE your_database_name      ##create database
+
 
 
 
@@ -26,5 +28,5 @@ comment in html: CTRL + K + C
 
 https://www.youtube.com/watch?v=Dbn4scR_25A link for payment gateways
 https://www.youtube.com/watch?v=gSYLNsbRSUs  link for paymongo
-
+https://www.geeksforgeeks.org/how-to-integrate-mysql-database-with-django/
 https://www.youtube.com/watch?v=tRZGeaHPoaw git tutorial
