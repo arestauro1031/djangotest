@@ -1,0 +1,52 @@
+========================
+	Create Table
+=========================
+CREATE TABLE `testdbyayan`.`employee` (
+  `empID` INT NOT NULL,
+  `empName` VARCHAR(60) NOT NULL,
+  `empAge` INT NOT NULL,
+  `empDepartment` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`empID`));
+
+BASIC CRUD
+
+
+
+
+
+========================
+	Create Database
+=========================
+CREATE SCHEMA `dddd` ;
+
+
+========================
+	Insert value
+=========================
+INSERT INTO `testdbyayan`.`employee` (`empID`, `empName`, `empAge`, `empDepartment`) VALUES ('1', 'andrian', '24', 'IT');
+
+========================
+	Delete value
+=========================
+
+DELETE FROM `testdbyayan`.`employee` WHERE (`empID` = '2');
+
+========================
+	Update value
+=========================
+UPDATE `testdbyayan`.`employee` SET `empAge` = '25' WHERE (`empID` = '1');
+
+Note: SET is used to update 
+      WHERE is used to locate the target value to update
+========================
+	View value
+=========================
+SELECT * FROM testdbyayan.employee;
+========================
+	Filter value
+=========================
+SELECT `empID` FROM testdbyayan.employee;
+
+Note: `empID` is the column name is used to display from the db (eg. testdbyayan) 
+
+===========================

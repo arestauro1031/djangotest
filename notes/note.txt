@@ -5,6 +5,13 @@ http://127.0.0.1:8000/                  ##server url
 python manage.py runserver              ##run server
 python manage.py migrate                ##add to database after execution
 python manage.py makemigrations         ##create migrations
+python manage.py startapp base          ##create an app named base
+django-admin startproject MyDB          ##initialize db project
+cd MyDB                                  ##go to project folder
+CREATE DATABASE your_database_name      ##create database
+
+
+
 admin pass
 qltyayan
 yayan123456
