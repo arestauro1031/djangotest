@@ -30,3 +30,5 @@ https://www.youtube.com/watch?v=Dbn4scR_25A link for payment gateways
 https://www.youtube.com/watch?v=gSYLNsbRSUs  link for paymongo
 https://www.geeksforgeeks.org/how-to-integrate-mysql-database-with-django/
 https://www.youtube.com/watch?v=tRZGeaHPoaw git tutorial
+
+https://forums.mydigitallife.net/threads/bios-recovery-acer-aspire-5-a515-51g.79447/ bios recovery
