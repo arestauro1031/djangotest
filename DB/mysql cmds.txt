@@ -50,3 +50,17 @@ Note: `empID` is the column name is used to display from the db (eg. testdbyayan
 
 ALTER TABLE `testdbyayan`.`userdemo` 
 CHANGE COLUMN `name` `username` VARCHAR(45) NULL DEFAULT NULL ;
+
+
+===========================
+	Alter Table
+===========================
+
+ALTER TABLE `database12`.`marksheet` 
+ADD COLUMN `Percentage` DECIMAL(10,2) NULL AFTER `Total`,
+ADD COLUMN `grade` INT(10) NULL AFTER `Percentage`,
+ADD COLUMN `GST` INT(10) NULL AFTER `grade`,
+CHANGE COLUMN `Math` `Math` INT NULL DEFAULT NULL ,
+CHANGE COLUMN `English` `English` INT NULL DEFAULT NULL ,
+CHANGE COLUMN `Filipino` `Filipino` INT NULL DEFAULT NULL ,
+CHANGE COLUMN `SST` `SST` INT NULL DEFAULT NULL ;
