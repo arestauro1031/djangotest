@@ -30,3 +30,10 @@ https://developers.paymongo.com/docs/account-activation  paymongo document refer
 https://www.youtube.com/watch?v=xCsBkYSwZJ8  paymongo sample
 https://developers.paymongo.com/docs/getting-started paymongo API test transaction
 https://www.youtube.com/watch?v=trU8iWBm0ec&list=PLj21bMRzCMPjzA9RpboLQF3TsV4vFeen6 paymongo introduction
+
+
+
+
+@TechGeekyArti
+3 years ago
+Hello Eric, I'm using MySQL 8.0 and windows 10 operating system. sometimes a silly mistake like comma or parenthesis or not wrapping text, string within quote marks can create an error. writing codes in correct manner needs practice. whenever it throws error, copy paste that error in google search bar to check what kind of error is that. hope this helped.
