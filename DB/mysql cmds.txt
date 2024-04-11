@@ -8,12 +8,6 @@ CREATE TABLE `testdbyayan`.`employee` (
   `empDepartment` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`empID`));
 
-BASIC CRUD
-
-
-
-
-
 ========================
 	Create Database
 =========================
@@ -50,12 +44,9 @@ SELECT `empID` FROM testdbyayan.employee;
 Note: `empID` is the column name is used to display from the db (eg. testdbyayan) 
 
 ===========================
-	Join Tables
-=========================
-
-
-SELECT E.empDepartment, E.empName,E.empAge,U.uid,U.name FROM testdbyayan.employee E JOIN testdbyayan.userdemo U ON E.empID = U.uid;
-
+	Alter Table
 ===========================
-	
-=========================
+
+
+ALTER TABLE `testdbyayan`.`userdemo` 
+CHANGE COLUMN `name` `username` VARCHAR(45) NULL DEFAULT NULL ;
