@@ -9,7 +9,7 @@ git add *
 git commit -m "message"
 git push
 
-
+https://www.youtube.com/watch?v=D9JAT-kUDAE = FIX MYSQL PORT PROBLEM ***** STAR EFFICIENT
 
 
 admin pass
