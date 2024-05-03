@@ -11,6 +11,7 @@ git push
 
 https://www.youtube.com/watch?v=D9JAT-kUDAE = FIX MYSQL PORT PROBLEM ***** STAR EFFICIENT
 https://www.youtube.com/watch?v=kkFZbpZH5a0 = python django x ajax
+https://www.youtube.com/watch?v=1IP7Vkwhb_A = date django database
 
 
 admin pass
