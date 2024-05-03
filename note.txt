@@ -10,6 +10,7 @@ git commit -m "message"
 git push
 
 https://www.youtube.com/watch?v=D9JAT-kUDAE = FIX MYSQL PORT PROBLEM ***** STAR EFFICIENT
+https://www.youtube.com/watch?v=kkFZbpZH5a0 = python django x ajax
 
 
 admin pass
