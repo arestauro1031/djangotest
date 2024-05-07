@@ -13,6 +13,7 @@ https://www.youtube.com/watch?v=D9JAT-kUDAE = FIX MYSQL PORT PROBLEM ***** STAR 
 https://www.youtube.com/watch?v=kkFZbpZH5a0 = python django x ajax
 https://www.youtube.com/watch?v=1IP7Vkwhb_A = date django database
 https://www.youtube.com/watch?v=ARy_ozfWj-I = django api make
+https://www.youtube.com/watch?v=YJTKlAvbDo4 = bootstrap x css
 
 
 admin pass
